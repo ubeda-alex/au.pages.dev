@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Alexander Ubeda — Código, diseño & sonido</title>
+
+  <meta
+    name="description"
+    content="Soy Alexander Ubeda, estudiante de Ingeniería en Computación en el TEC. Programación, diseño web y producción audiovisual, con interés en ciberseguridad y análisis de datos."
+  >
+
+  <meta name="theme-color" content="#f2efe9">
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231b3026'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='32' font-weight='bold' fill='%23d4f586'%3EA%3C/text%3E%3C/svg%3E"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip" href="#sobre-mi">
+    Saltar al contenido
+  </a>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span></span>
+  </div>
+
+  <div class="pointer-glow" aria-hidden="true"></div>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob-one"></span>
+    <span class="blob blob-two"></span>
+    <span class="blob blob-three"></span>
+    <span class="grain"></span>
+  </div>
+
+  <div class="page" id="inicio">
+
+    <header class="header glass-panel">
+
+      <a
+        class="brand magnetic"
+        href="#inicio"
+        aria-label="Alexander Ubeda, inicio"
+      >
+        au<span>✳</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#universo">Lo que hago</a>
+        <a href="#rumbo">Mi rumbo</a>
+        <a href="#contacto">Contacto ↗</a>
+      </nav>
+
+      <span class="header-note">
+        <i></i>
+        PORTAFOLIO / 2026
+      </span>
+
+    </header>
+
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+
+        <div class="hero-top reveal">
+
+          <span class="eyebrow">
+            ESTUDIANTE DE INGENIERÍA EN COMPUTACIÓN
+          </span>
+
+          <span class="edition">
+            TEC · COSTA RICA
+          </span>
+
+        </div>
+
+
+        <div class="hero-grid">
+
+          <div class="hero-copy reveal">
+
+            <p class="hero-kicker">
+              Código <span>+</span> creatividad
+            </p>
+
+            <h1 id="hero-title">
+              Alexander<br>
+              <span>Ubeda</span><b>.</b>
+            </h1>
+
+            <p class="hero-lead">
+              Entre líneas de código,<br>
+              ideas y <em>buen ritmo.</em>
+            </p>
+
+            <div class="hero-actions">
+
+              <a
+                class="pill magnetic"
+                href="#universo"
+              >
+                Explora mi universo
+                <span aria-hidden="true">↘</span>
+              </a>
+
+              <a
+                class="text-link"
+                href="https://github.com/ubeda-alex"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- RETRATO -->
+          <div
+            class="portrait-wrap reveal"
+            data-tilt
+            data-tilt-strength="5"
+          >
+
+            <div
+              class="portrait-aura"
+              aria-hidden="true"
+            ></div>
+
+
+            <!--
+              ÓRBITA TRASERA
+
+              Esta línea está detrás de la fotografía.
+              Al quedar tapada por la foto da la impresión
+              de pasar por detrás de Alexander.
+            -->
+            <svg
+              class="portrait-orbit orbit-back"
+              viewBox="0 0 540 620"
+              aria-hidden="true"
+            >
+              <path
+                d="M52 365C92 242 198 198 332 206C440 213 505 273 490 345C470 435 342 472 208 447C98 427 33 400 52 365Z"
+              />
+            </svg>
+
+
+            <!-- FOTO -->
+            <div class="portrait-frame">
+
+              <img
+                src="assets/alexander.webp"
+                alt="Alexander Ubeda frente a una camioneta blanca"
+                width="1100"
+                height="1467"
+                fetchpriority="high"
+              >
+
+              <div
+                class="portrait-shade"
+                aria-hidden="true"
+              ></div>
+
+            </div>
+
+
+            <!--
+              ÓRBITA DELANTERA
+
+              Es la misma órbita, pero CSS solamente
+              muestra la parte inferior.
+
+              Eso hace que la línea reaparezca delante
+              del cuerpo y cree el efecto 3D.
+            -->
+            <svg
+              class="portrait-orbit orbit-front"
+              viewBox="0 0 540 620"
+              aria-hidden="true"
+            >
+              <path
+                d="M52 365C92 242 198 198 332 206C440 213 505 273 490 345C470 435 342 472 208 447C98 427 33 400 52 365Z"
+              />
+            </svg>
+
+
+            <span
+              class="orbit-note"
+              aria-hidden="true"
+            >
+              MOVE · HOVER · EXPLORE
+            </span>
+
+            <span class="portrait-chip chip-code">
+              &lt;/&gt; code
+            </span>
+
+            <span class="portrait-chip chip-sound">
+              ◉ sound
+            </span>
+
+          </div>
+
+
+          <aside class="hero-side reveal">
+
+            <p>
+              Me gusta programar, diseñar para la web
+              y darle vida a lo audiovisual.
+              La curiosidad es el punto de partida.
+            </p>
+
+            <div class="mini-stack">
+              <span>PYTHON</span>
+              <span>JAVA</span>
+              <span>GO</span>
+              <span>WEB</span>
+            </div>
+
+            <span
+              class="vertical-note"
+              aria-hidden="true"
+            >
+              SCROLL PARA CONOCERME
+            </span>
+
+          </aside>
+
+        </div>
+
+
+        <div
+          class="discipline-strip"
+          aria-label="Áreas de interés"
+        >
+
+          <div class="ticker-track">
+
+            <span>DESARROLLO</span>
+            <b>✳</b>
+
+            <span>DISEÑO WEB</span>
+            <b>✳</b>
+
+            <span>AUDIOVISUAL</span>
+            <b>✳</b>
+
+            <span>MÚSICA</span>
+            <b>✳</b>
+
+
+            <span aria-hidden="true">DESARROLLO</span>
+            <b aria-hidden="true">✳</b>
+
+            <span aria-hidden="true">DISEÑO WEB</span>
+            <b aria-hidden="true">✳</b>
+
+            <span aria-hidden="true">AUDIOVISUAL</span>
+            <b aria-hidden="true">✳</b>
+
+            <span aria-hidden="true">MÚSICA</span>
+            <b aria-hidden="true">✳</b>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- SOBRE MÍ -->
+      <section
+        class="about section"
+        id="sobre-mi"
+        aria-labelledby="about-title"
+      >
+
+        <div class="section-label reveal">
+
+          <span>
+            01 / SOBRE MÍ
+          </span>
+
+          <span
+            class="tiny-symbol"
+            aria-hidden="true"
+          >
+            [ au ]
+          </span>
+
+        </div>
+
+
+        <div class="about-content reveal">
+
+          <h2 id="about-title">
+            Una mente técnica.<br>
+            Un lado <em>creativo.</em>
+          </h2>
+
+
+          <div class="about-copy">
+
+            <p>
+              Soy Alexander, estudiante del TEC,
+              y estoy terminando mi carrera de
+              Ingeniería en Computación.
+
+              Disfruto entender cómo funcionan las cosas
+              y convertir ideas en algo que se pueda usar,
+              ver o escuchar.
+            </p>
+
+            <p>
+              Mi mundo también pasa por una consola de sonido,
+              una línea de tiempo de video y la percusión.
+
+              Esa mezcla de lógica y sensibilidad
+              es parte de cómo abordo lo que hago.
+            </p>
+
+          </div>
+
+
+          <div class="about-facts">
+
+            <div
+              data-tilt
+              data-tilt-strength="2"
+            >
+
+              <span>
+                FORMACIÓN
+              </span>
+
+              <strong>
+                Ingeniería en Computación
+              </strong>
+
+              <p>
+                Tecnológico de Costa Rica
+              </p>
+
+            </div>
+
+
+            <div
+              data-tilt
+              data-tilt-strength="2"
+            >
+
+              <span>
+                MI FORMA DE CREAR
+              </span>
+
+              <strong>
+                Código + diseño + sonido
+              </strong>
+
+              <p>
+                Distintas disciplinas,
+                la misma curiosidad.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- UNIVERSO -->
+      <section
+        class="universe section"
+        id="universo"
+        aria-labelledby="universe-title"
+      >
+
+        <div
+          class="universe-glow"
+          aria-hidden="true"
+        ></div>
+
+
+        <div class="section-label reveal">
+
+          <span>
+            02 / LO QUE HAGO
+          </span>
+
+          <span>
+            CONEXIONES, NO CASILLAS
+          </span>
+
+        </div>
+
+
+        <div class="section-heading reveal">
+
+          <h2 id="universe-title">
+            Mi universo<span>.</span>
+          </h2>
+
+          <p>
+            La parte técnica y la creativa<br>
+            siempre terminan encontrándose.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+          <!-- DESARROLLO -->
+          <article
+            class="card code-card reveal"
+            data-tilt
+            data-tilt-strength="4"
+          >
+
+            <div
+              class="card-glow"
+              aria-hidden="true"
+            ></div>
+
+            <div class="card-top">
+
+              <span>
+                01 — DESARROLLO
+              </span>
+
+              <span aria-hidden="true">
+                &lt;/&gt;
+              </span>
+
+            </div>
+
+            <h3>
+              Ideas que se<br>
+              vuelven código.
+            </h3>
+
+            <p>
+              La programación es mi base.
+              El diseño web, uno de los espacios
+              donde más disfruto crear.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>Java</span>
+              <span>Go</span>
+              <span>Assembly</span>
+            </div>
+
+            <div class="card-foot">
+              LÓGICA CON INTENCIÓN
+            </div>
+
+          </article>
+
+
+          <!-- AUDIOVISUAL -->
+          <article
+            class="card audio-card reveal"
+            data-tilt
+            data-tilt-strength="4"
+          >
+
+            <div
+              class="card-glow"
+              aria-hidden="true"
+            ></div>
+
+            <div class="card-top">
+
+              <span>
+                02 — AUDIOVISUAL
+              </span>
+
+              <span aria-hidden="true">
+                ◉
+              </span>
+
+            </div>
+
+            <h3>
+              Que se vea.<br>
+              Que se escuche.
+            </h3>
+
+            <p>
+              Edición de video, sonido,
+              operación técnica en auditorio
+              y transmisiones en vivo.
+            </p>
+
+            <div
+              class="equalizer"
+              aria-hidden="true"
+            >
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+              <i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="card-foot">
+              IMAGEN, SONIDO Y DIRECTO
+            </div>
+
+          </article>
+
+
+          <!-- MÚSICA -->
+          <article
+            class="card music-card reveal"
+            data-tilt
+            data-tilt-strength="4"
+          >
+
+            <div
+              class="card-glow"
+              aria-hidden="true"
+            ></div>
+
+            <div class="card-top">
+
+              <span>
+                03 — MÚSICA
+              </span>
+
+              <span aria-hidden="true">
+                ✳
+              </span>
+
+            </div>
+
+            <h3>
+              Todo tiene<br>
+              su ritmo.
+            </h3>
+
+            <p>
+              Soy percusionista.
+
+              La música es una parte de mí:
+              escuchar, conectar y encontrar
+              el momento preciso.
+            </p>
+
+            <div
+              class="rhythm"
+              aria-hidden="true"
+            >
+              <span>1</span>
+              <span>&</span>
+              <span>2</span>
+              <span>&</span>
+              <span>3</span>
+              <span>&</span>
+              <span>4</span>
+              <span>&</span>
+            </div>
+
+            <div class="card-foot">
+              CREATIVIDAD QUE SE SIENTE
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- RUMBO -->
+      <section
+        class="direction section"
+        id="rumbo"
+        aria-labelledby="direction-title"
+      >
+
+        <div class="section-label reveal">
+
+          <span>
+            03 / HACIA DÓNDE VOY
+          </span>
+
+          <span aria-hidden="true">
+            ↗
+          </span>
+
+        </div>
+
+
+        <div class="direction-layout">
+
+          <div class="direction-title-block reveal">
+
+            <h2 id="direction-title">
+              La curiosidad<br>
+              marca el <em>rumbo.</em>
+            </h2>
+
+            <p class="direction-note">
+              Dos áreas que conectan muy bien
+              con mi forma de pensar:
+              entender sistemas y encontrar patrones.
+            </p>
+
+          </div>
+
+
+          <div class="direction-items">
+
+            <article
+              class="reveal"
+              data-tilt
+              data-tilt-strength="2"
+            >
+
+              <span>
+                01
+              </span>
+
+              <div>
+
+                <h3>
+                  Ciberseguridad
+                </h3>
+
+                <p>
+                  El área en la que quiero enfocar
+                  mi desarrollo profesional:
+                  comprender los sistemas
+                  y aprender a protegerlos.
+                </p>
+
+              </div>
+
+              <b aria-hidden="true">
+                ↗
+              </b>
+
+            </article>
+
+
+            <article
+              class="reveal"
+              data-tilt
+              data-tilt-strength="2"
+            >
+
+              <span>
+                02
+              </span>
+
+              <div>
+
+                <h3>
+                  Análisis de datos
+                </h3>
+
+                <p>
+                  Otro camino que me interesa explorar:
+                  encontrar patrones y transformar
+                  información en respuestas.
+                </p>
+
+              </div>
+
+              <b aria-hidden="true">
+                ↗
+              </b>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- CONTACTO -->
+      <section
+        class="contact-panel section"
+        id="contacto"
+        aria-labelledby="contact-title"
+      >
+
+        <div
+          class="contact-orb orb-a"
+          aria-hidden="true"
+        ></div>
+
+        <div
+          class="contact-orb orb-b"
+          aria-hidden="true"
+        ></div>
+
+
+        <span class="section-label reveal">
+          04 / CONTACTO
+        </span>
+
+
+        <div class="contact-inner reveal">
+
+          <p>
+            ¿Una idea, un proyecto<br>
+            o simplemente hablamos?
+          </p>
+
+          <h2 id="contact-title">
+            Conectemos<span>.</span>
+          </h2>
+
+
+          <div class="socials">
+
+            <a
+              class="magnetic"
+              href="https://github.com/ubeda-alex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+            <a
+              class="magnetic"
+              href="https://www.linkedin.com/in/ubeda-alex/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a
+              class="magnetic"
+              href="https://www.instagram.com/ubeda_alex_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer>
+
+        <a
+          class="footer-name"
+          href="#inicio"
+        >
+          Alexander Ubeda
+          <span aria-hidden="true">↗</span>
+        </a>
+
+
+        <div class="footer-bottom">
+
+          <span>
+            CÓDIGO, DISEÑO & SONIDO.
+          </span>
+
+          <span>
+            ©
+            <span id="year">2026</span>
+            Alexander Ubeda
+          </span>
+
+          <a href="#inicio">
+            Volver arriba ↑
+          </a>
+
+        </div>
+
+      </footer>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
